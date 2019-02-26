@@ -12,11 +12,26 @@ console.log("sftm.hook() - Creates a teacher account.");
 console.log("sftm.switch() - Switches to a teacher account.");
 console.log("sftm.why() - Benefits of a teacher account.");
 }
-sftm.guide = function() {
-alert("err: not implemented.")
+sftm.guide = function(thing) {
+if (thing === undefined) {
+console.log("Welcome to SFTM Guide!");
+console.log("Please change to part1.");
+console.log("sftm.guide('part1')");
+console.log("Thank you!")
+} 
+if (thing == "part1") {
+console.log("Part 1: Setting up your account.");
+console.log("You will have to constantly re-inject the JS file per time you switch pages, unless you are using a script manager in Chrome.");
+console.log("Log out of SeeSaw.");
+console.log("Click teacher, or type sftm.hook('guide').");
+//
 }
-sftm.hook = function() {
-alert("err: not implemented.")
+}
+sftm.hook = function(thingX) {
+if (thingX === undefined) {
+alert("About to inject and force teacher mode. You might need to re-run the process to continue.")
+}
+
 }
 sftm.switch = function() {
 alert("err: not implemented.")
